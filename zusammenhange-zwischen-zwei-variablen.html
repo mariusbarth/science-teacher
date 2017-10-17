@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-
-<link rel="next" href="measurement.html">
+<link rel="prev" href="literatur.html">
+<link rel="next" href="der-einfluss-von-drittvariablen.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -46,6 +46,10 @@
 
 
 
+<script src="libs/htmlwidgets-0.9/htmlwidgets.js"></script>
+<script src="libs/viz-0.3/viz.js"></script>
+<link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+<script src="libs/grViz-binding-0.9.2/grViz.js"></script>
 
 
 
@@ -68,14 +72,13 @@
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Vorwort</a></li>
 <li class="chapter" data-level="1" data-path="measurement.html"><a href="measurement.html"><i class="fa fa-check"></i><b>1</b> Messen</a><ul>
 <li class="chapter" data-level="1.1" data-path="measurement.html"><a href="measurement.html#skalen-und-skalenniveaus"><i class="fa fa-check"></i><b>1.1</b> Skalen und Skalenniveaus</a></li>
-<li class="chapter" data-level="1.2" data-path="measurement.html"><a href="measurement.html#messbarkeit-und-messfehler"><i class="fa fa-check"></i><b>1.2</b> Messbarkeit und Messfehler</a></li>
+<li class="chapter" data-level="1.2" data-path="measurement.html"><a href="measurement.html#messfehler"><i class="fa fa-check"></i><b>1.2</b> Messfehler</a></li>
 <li class="chapter" data-level="" data-path="measurement.html"><a href="measurement.html#aufgaben"><i class="fa fa-check"></i>Aufgaben</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="beschreiben-und-zusammenfassen.html"><a href="beschreiben-und-zusammenfassen.html"><i class="fa fa-check"></i><b>2</b> Beschreiben und Zusammenfassen</a><ul>
 <li class="chapter" data-level="2.1" data-path="beschreiben-und-zusammenfassen.html"><a href="beschreiben-und-zusammenfassen.html#haufigkeitsverteilungen"><i class="fa fa-check"></i><b>2.1</b> Häufigkeitsverteilungen</a></li>
 <li class="chapter" data-level="2.2" data-path="beschreiben-und-zusammenfassen.html"><a href="beschreiben-und-zusammenfassen.html#statistische-kennwerte"><i class="fa fa-check"></i><b>2.2</b> Statistische Kennwerte</a><ul>
 <li class="chapter" data-level="2.2.1" data-path="beschreiben-und-zusammenfassen.html"><a href="beschreiben-und-zusammenfassen.html#lagemae"><i class="fa fa-check"></i><b>2.2.1</b> Lagemaße</a></li>
-<li class="chapter" data-level="2.2.2" data-path="beschreiben-und-zusammenfassen.html"><a href="beschreiben-und-zusammenfassen.html#streuungsmae"><i class="fa fa-check"></i><b>2.2.2</b> Streuungsmaße</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="beschreiben-und-zusammenfassen.html"><a href="beschreiben-und-zusammenfassen.html#aufgaben-1"><i class="fa fa-check"></i>Aufgaben</a></li>
 </ul></li>
@@ -83,7 +86,14 @@
 <li class="chapter" data-level="" data-path="losungen.html"><a href="losungen.html#kapitel-1-messen"><i class="fa fa-check"></i>Kapitel 1: Messen</a></li>
 <li class="chapter" data-level="" data-path="losungen.html"><a href="losungen.html#kapitel-2-beschreiben-und-zusammenfassen"><i class="fa fa-check"></i>Kapitel 2: Beschreiben und Zusammenfassen</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="konzept.html"><a href="konzept.html"><i class="fa fa-check"></i>Konzept</a></li>
 <li class="chapter" data-level="" data-path="literatur.html"><a href="literatur.html"><i class="fa fa-check"></i>Literatur</a></li>
+<li class="chapter" data-level="3" data-path="zusammenhange-zwischen-zwei-variablen.html"><a href="zusammenhange-zwischen-zwei-variablen.html"><i class="fa fa-check"></i><b>3</b> Zusammenhänge zwischen zwei Variablen</a></li>
+<li class="chapter" data-level="4" data-path="der-einfluss-von-drittvariablen.html"><a href="der-einfluss-von-drittvariablen.html"><i class="fa fa-check"></i><b>4</b> Der Einfluss von Drittvariablen</a><ul>
+<li class="chapter" data-level="4.1" data-path="der-einfluss-von-drittvariablen.html"><a href="der-einfluss-von-drittvariablen.html#das-simpson-paradox"><i class="fa fa-check"></i><b>4.1</b> Das Simpson-Paradox</a></li>
+<li class="chapter" data-level="4.2" data-path="der-einfluss-von-drittvariablen.html"><a href="der-einfluss-von-drittvariablen.html#kontrolle-von-drittvariablen"><i class="fa fa-check"></i><b>4.2</b> Kontrolle von Drittvariablen</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="vom-zusammenhang-zum-kausalzusammenhang.html"><a href="vom-zusammenhang-zum-kausalzusammenhang.html"><i class="fa fa-check"></i><b>5</b> Vom Zusammenhang zum Kausalzusammenhang</a></li>
 </ul>
 
       </nav>
@@ -101,21 +111,36 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Forschungsmethoden im Biologieunterricht</h1>
-<h4 class="author"><em>Marius Barth</em></h4>
-<h4 class="date"><em>Stand: 17.10.2017</em></h4>
+<div id="zusammenhange-zwischen-zwei-variablen" class="section level1">
+<h1><span class="header-section-number">Kapitel 3</span> Zusammenhänge zwischen zwei Variablen</h1>
+<p>Häufig möchte man nicht nur wissen, wie eine einzelne Variable verteilt ist, sondern vielmehr, wie zwei oder mehr Variablen miteinander <em>zusammenhängen</em>. <!-- Merkmale/Merkmalsträger wäre besser --> Der Zusammenhang zweier Variablen meint deren gemeinsames Variieren (ihre <em>Kovariation</em>) – also ein gemeinsames Auftreten von hohen oder niedrigen Werten: Ein <em>gleichsinniger</em> oder <em>positiver</em> Zusammenhang bedeutet, dass hohe Werte in der einen Variable mit hohen Werten in der anderen Variable einhergehen; ein <em>gegenläufiger</em> oder <em>negativer</em> Zusammenhang liegt dann vor, wenn hohe Werte in der einen Variable mit niedrigen Werte in der anderen Variable einhergen.</p>
+<p>Hierdurch ist es nun also auch möglich, von den Werten der einen Variablen auf die Werte der anderen Werte zu schließen. Mit welcher <em>Genauigkeit</em> man dies kann, hängt von der <em>Stärke</em> des Zusammenhangs ab.</p>
+<p>Darüber hinaus unterscheidet man die <em>Form</em> eines Zusammenhangs.</p>
+<p><strong>Abbildungen für unterschiedliche Formen</strong></p>
+<p>Will man einen Zusammenhang beschreiben, lassen sich also schon drei Eigenschaften unterscheiden: Richtung, Form und Stärke.</p>
+<p>Um Zusammenhänge bildlich darzustellen, verwendet man häufig ein <em>Streudiagramm</em> wie in Abbildung <a href="zusammenhange-zwischen-zwei-variablen.html#fig:first-scatterplot">3.1</a>.</p>
+<div class="figure"><span id="fig:first-scatterplot"></span>
+<img src="Forschungsmethoden_files/figure-html/first-scatterplot-1.png" alt="Der Zusammenhang zwischen der Geschwindigkeit eines Fahrzeugs und dem Bremsweg, um das Fahrzeug aus dieser Geschwindigkeit zum Stillstand zu bringen. Die Daten stammen aus den 1920er Jahren." width="480" />
+<p class="caption">
+Abbildung 3.1: Der Zusammenhang zwischen der Geschwindigkeit eines Fahrzeugs und dem Bremsweg, um das Fahrzeug aus dieser Geschwindigkeit zum Stillstand zu bringen. Die Daten stammen aus den 1920er Jahren.
+</p>
 </div>
-<div id="vorwort" class="section level1 unnumbered">
-<h1>Vorwort</h1>
+<p>Die Stärke eines Zusammenhangs lässt sich mithilfe eines geeigneten statistischen Kennwerts quantifizieren. Welcher statistische Kennwert in einer bestimmten Anwendung geeignet ist, hängt von der Form des Zusammenhangs, dem Skalenniveau der beteiligten Variablen und weiteren Voraussetzungen einzelner statistischer Kennwerte bzw. Verfahren ab. Die Frage, welcher Kennwert geeignet ist, stellt dabei eine der Fragen dar, mit denen sich ein großer Teil der statistischen Literatur beschäftigt, den wir aber im Rahmen dieser Veranstaltung nicht vertiefen werden.</p>
+<p>Ein besonders gängiges Maß für den Zusammenhang zweier Variablen ist der Korrelationskoeffizient <span class="math inline">\(r\)</span> nach Pearson (er <em>eignet</em> sich zur Quantifizierung des linearen Zusammenhangs zweier intervallskalierter Variablen). Er ist ein standardisiertes Maß für die <em>Richtung</em> und die <em>Stärke</em> eines linearen Zusammenhangs und hat einen Wertebereich von -1 bis +1: Negative Werte zeigen einen negativen, positive Werte zeigen einen positiven Zusammenhang an. Ein Wert von 0 bedeutet, dass kein (linearer) Zusammenhang besteht.</p>
+<ul>
+<li>Konzept von Kovariation/Zusammenhang:
+<ul>
+<li>Scatterplots, Mittlewertsunterschiede, log. Regression</li>
+</ul></li>
+</ul>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="measurement.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="literatur.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="der-einfluss-von-drittvariablen.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -144,7 +169,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/index.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/zusammenhang.Rmd",
 "text": "Bearbeiten"
 },
 "download": ["Forschungsmethoden.pdf"],
