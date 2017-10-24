@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="measurement.html">
-<link rel="next" href="losungen.html">
+<link rel="next" href="wahrscheinlichkeitstheorie-und-inferenzstatistische-grundlagen.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -79,6 +79,16 @@
 </ul></li>
 <li class="chapter" data-level="" data-path="beschreiben-und-zusammenfassen.html"><a href="beschreiben-und-zusammenfassen.html#aufgaben-1"><i class="fa fa-check"></i>Aufgaben</a></li>
 </ul></li>
+<li class="chapter" data-level="3" data-path="wahrscheinlichkeitstheorie-und-inferenzstatistische-grundlagen.html"><a href="wahrscheinlichkeitstheorie-und-inferenzstatistische-grundlagen.html"><i class="fa fa-check"></i><b>3</b> Wahrscheinlichkeitstheorie und inferenzstatistische Grundlagen</a><ul>
+<li class="chapter" data-level="3.1" data-path="wahrscheinlichkeitstheorie-und-inferenzstatistische-grundlagen.html"><a href="wahrscheinlichkeitstheorie-und-inferenzstatistische-grundlagen.html#wahrscheinlichkeitsbegriffe"><i class="fa fa-check"></i><b>3.1</b> Wahrscheinlichkeitsbegriffe</a></li>
+<li class="chapter" data-level="3.2" data-path="wahrscheinlichkeitstheorie-und-inferenzstatistische-grundlagen.html"><a href="wahrscheinlichkeitstheorie-und-inferenzstatistische-grundlagen.html#wahrscheinlichkeits--und-wahrscheinlichkeitsdichteverteilungen"><i class="fa fa-check"></i><b>3.2</b> Wahrscheinlichkeits- und Wahrscheinlichkeitsdichteverteilungen</a></li>
+<li class="chapter" data-level="3.3" data-path="wahrscheinlichkeitstheorie-und-inferenzstatistische-grundlagen.html"><a href="wahrscheinlichkeitstheorie-und-inferenzstatistische-grundlagen.html#stichprobenkennwerteverteilung"><i class="fa fa-check"></i><b>3.3</b> Stichprobenkennwerteverteilung</a></li>
+<li class="chapter" data-level="" data-path="wahrscheinlichkeitstheorie-und-inferenzstatistische-grundlagen.html"><a href="wahrscheinlichkeitstheorie-und-inferenzstatistische-grundlagen.html#aufgaben-2"><i class="fa fa-check"></i>Aufgaben</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="hypothesen-und-hypothesentest.html"><a href="hypothesen-und-hypothesentest.html"><i class="fa fa-check"></i><b>4</b> Hypothesen und Hypothesentest</a><ul>
+<li class="chapter" data-level="4.1" data-path="hypothesen-und-hypothesentest.html"><a href="hypothesen-und-hypothesentest.html#entscheidungsfehler"><i class="fa fa-check"></i><b>4.1</b> Entscheidungsfehler</a></li>
+<li class="chapter" data-level="" data-path="hypothesen-und-hypothesentest.html"><a href="hypothesen-und-hypothesentest.html#aufgaben-3"><i class="fa fa-check"></i>Aufgaben</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="losungen.html"><a href="losungen.html"><i class="fa fa-check"></i>Lösungen</a><ul>
 <li class="chapter" data-level="" data-path="losungen.html"><a href="losungen.html#kapitel-1-messen"><i class="fa fa-check"></i>Kapitel 1: Messen</a></li>
 <li class="chapter" data-level="" data-path="losungen.html"><a href="losungen.html#kapitel-2-beschreiben-und-zusammenfassen"><i class="fa fa-check"></i>Kapitel 2: Beschreiben und Zusammenfassen</a></li>
@@ -106,7 +116,7 @@
 <p>Die <em>deskriptive Statistik</em> beschäftigt sicht mit der Frage, wie Merkmale bzw. Variablen sinnvoll beschrieben und zusammengefasst werden können. Wichtige Methoden hierzu sind <em>Häufigkeitsverteilungen</em> und <em>statistische Kennwerte</em>, die wir in diesem Kapitel vorstellen werden.</p>
 <div id="haufigkeitsverteilungen" class="section level2">
 <h2><span class="header-section-number">2.1</span> Häufigkeitsverteilungen</h2>
-<p>Um ein Merkmal zu beschreiben, kann man sich dessen <em>Häufigkeitsverteilung</em> anschauen. Die Häufigkeitsverteilung eines Merkmals ist charakterisiert durch (1) die Gesamtheit der unterschiedlichen Merkmalsausprägungen und (2) die Häufigkeit, mit der diese Ausprägungen vorkommen. Sie lässt sich in Form von Häufigkeitstabellen oder in einem Diagramm wie Abbildung <a href="beschreiben-und-zusammenfassen.html#fig:first-distribution">2.1</a> darstellen.</p>
+<p>Um ein Merkmal zu beschreiben, kann man sich dessen <em>Häufigkeitsverteilung</em> anschauen. Die Häufigkeitsverteilung eines Merkmals ist charakterisiert durch (1) die Gesamtheit der unterschiedlichen Merkmalsausprägungen und (2) die Häufigkeit, mit der diese Ausprägungen vorkommen. Sie lässt sich in Form von Häufigkeitstabellen oder in einem Säulendiagramm wie Abbildung <a href="beschreiben-und-zusammenfassen.html#fig:first-distribution">2.1</a> darstellen.</p>
 <div class="figure"><span id="fig:first-distribution"></span>
 <img src="Forschungsmethoden_files/figure-html/first-distribution-1.png" alt="Die Häufigkeitsverteilung der nominalskalierten Variable *Lieblingsgericht*. Die $x$-Achse bezeichnet die Ausprägung des Merkmals, die Höhe der Verteilung ($y$-Wert) gibt Aufschluss über die Häufigkeit der zugehörigen Merkmalsausprägung." width="672" />
 <p class="caption">
@@ -129,13 +139,13 @@ Abbildung 2.2: Histogramm der gemessenen Körpergröße in einer 10. Klasse.
 <p>Um die Häufigkeitsverteilung eines Merkmals zusammenfassend zu beschreiben, verwendet man zusätzlich <em>statistische Kennwerte</em>, die bestimmte Eigenschaften der Häufigkeitsverteilung in Zahlen zusammenfassen sollen. Hierzu unterscheidet man (1) <em>Lagemaße</em> bzw. <em>Maße der zentralen Tendenz</em> und (2) <em>Streuungs-</em> bzw. <em>Dispersionsmaße</em>. Lagemaße beantworten die Frage “Wo auf der Skala liegen die Messwerte?”, Streuungsmaße beantworten die Frage “Wie stark unterscheiden sich die Messwerte voneinander?”.</p>
 <p>Sowohl für die Lage als auch die Streuung gibt es viele unterschiedliche Kennwerte – welchen Kennwert man am besten verwendet, hängt nämlich davon ab, welches Skalenniveau die Variable, die wir beschreiben möchten, aufweist.</p>
 <div class="figure"><span id="fig:unnamed-chunk-3"></span>
-<img src="Forschungsmethoden_files/figure-html/unnamed-chunk-3-1.png" alt="Zwei Häufigkeitsverteilungen mit unterschiedlicher Lage, aber gleicher Streuung." width="672" />
+<img src="Forschungsmethoden_files/figure-html/unnamed-chunk-3-1.png" alt="Zwei Häufigkeitsverteilungen mit unterschiedlicher Lage, aber gleicher Streuung." width="768" />
 <p class="caption">
 Abbildung 2.3: Zwei Häufigkeitsverteilungen mit unterschiedlicher Lage, aber gleicher Streuung.
 </p>
 </div>
 <div class="figure"><span id="fig:unnamed-chunk-4"></span>
-<img src="Forschungsmethoden_files/figure-html/unnamed-chunk-4-1.png" alt="Zwei Häufigkeitsverteilungen mit gleicher Lage, aber unterschiedlicher Streuung." width="672" />
+<img src="Forschungsmethoden_files/figure-html/unnamed-chunk-4-1.png" alt="Zwei Häufigkeitsverteilungen mit gleicher Lage, aber unterschiedlicher Streuung." width="768" />
 <p class="caption">
 Abbildung 2.4: Zwei Häufigkeitsverteilungen mit gleicher Lage, aber unterschiedlicher Streuung.
 </p>
@@ -401,6 +411,7 @@ Abbildung 2.4: Zwei Häufigkeitsverteilungen mit gleicher Lage, aber unterschied
 <li>Berechnet den Mittelwert der Variable <em>Alter</em> aus Aufgabe 1.</li>
 <li>Erläutert, warum es nicht sinnvoll ist, den Median der Variable <em>Geschlecht</em> zu berechnen.</li>
 </ol>
+
 </div>
 </div>
             </section>
@@ -409,7 +420,7 @@ Abbildung 2.4: Zwei Häufigkeitsverteilungen mit gleicher Lage, aber unterschied
         </div>
       </div>
 <a href="measurement.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="losungen.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="wahrscheinlichkeitstheorie-und-inferenzstatistische-grundlagen.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

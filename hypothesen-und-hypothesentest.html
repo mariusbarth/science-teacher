@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="hypothesen-und-hypothesentest.html">
-<link rel="next" href="literatur.html">
+<link rel="prev" href="wahrscheinlichkeitstheorie-und-inferenzstatistische-grundlagen.html">
+<link rel="next" href="losungen.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -111,45 +111,41 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="losungen" class="section level1 unnumbered">
-<h1>Lösungen</h1>
-<div id="kapitel-1-messen" class="section level2 unnumbered">
-<h2>Kapitel 1: Messen</h2>
-<p>Überlegt in 2er- oder 3er-Gruppen, welches Skalenniveau die folgenden Variablen aufweisen:</p>
-<ol style="list-style-type: lower-alpha">
-<li>Das bei uns geläufige metrische System zur Messung von Distanzen in Millimetern, Zentimetern, Metern, oder Kilometern;</li>
-<li>die Nummern der Straßenbahnen der KVB (Kölner Verkehrsbetriebe);</li>
-<li>Schulnoten;</li>
-<li>Postleitzahlen.</li>
-</ol>
-<p>Das metrische System weist Verhältnisskalenniveau auf: Die Relation <em>Gleichheit/Verschiedenheit</em> ist erhalten, denn <span class="math inline">\(1~m\)</span> ist etwas anderes als <span class="math inline">\(2~m\)</span>, aber <span class="math inline">\(1~m\)</span> ist immer das gleiche. Die Relation <em>Ordnung</em> ist erhalten, denn <span class="math inline">\(1~m\)</span> ist kürzer als <span class="math inline">\(2~m\)</span> ist kürzer als <span class="math inline">\(3~m\)</span>. Die Relation <em>Größe der Verschiedenheit</em> ist erhalten, denn der Unterschied zwischen <span class="math inline">\(1~m\)</span> und <span class="math inline">\(2~m\)</span> ist genauso groß wie der Unterschied zwischen <span class="math inline">\(2~m\)</span> und <span class="math inline">\(3~m\)</span>. Die Relation <em>Verhältnis der Merkmalsausprägung</em> ist erhalten, <span class="math inline">\(2~m\)</span> sind doppelt so lang wie <span class="math inline">\(1~m\)</span> und <span class="math inline">\(4~m\)</span> sind doppelt so lang wie <span class="math inline">\(2~m\)</span>. Die Relation <em>absoluter Werte</em> ist nicht gegeben, denn die Länge eines Meters ist willkürlich gewählt, man hätte genauso gut eine kürzere oder längere Länge festlegen können. (<em>Übrigens</em>: Ein Meter entspricht genau der Strecke, die Licht in <span class="math inline">\(\frac{1}{299{,}792{,}458} s\)</span> im Vakuum zurücklegt.) Da alle Relationen außer der Relation absoluter Werte gegeben sind, ist Verhältnisskalenniveau gegeben.</p>
-<p>Die Nummern der Straßenbahnen der KVB weisen <em>bestenfalls</em> Nominalskalenniveau auf: Es ist vermutlich so gedacht, dass die Nummer die gefahrene Strecke anzeigen soll, das ist auch häufig der Fall. Unterschiedlich Nummern bezeichnen unterschiedliche Strecken, gleiche Nummern bezeichnen oft, aber nicht immer die gleiche Strecke: Gelegentlich fährt eine Linie 1 z.B. nicht zur Endhaltestelle Bensberg, sondern zur Endhaltestelle Zündorf. Man kann also nicht davon ausgehen, dass zwei Straßenbahnen mit der gleichen Nummer auch die gleiche Strecke fahren.</p>
-<p>Über Schulnoten lässt sich immer wieder gut streiten. Ist die Benotung fair, ist die Relation von <em>Gleichheit/Verschiedenheit</em> erhalten, denn zwei unterschiedliche Schulleistungen sollten sich auch in unterschiedlichen Noten niederschlagen. Ungefähr gleiche Leistungen werden auch gleich benotet. Die Relation der <em>Ordnung</em> ist ebenfalls erhalten, denn eine 1 ist besser als eine 2 ist besser als eine 3. Die Relation der <em>Größe der Verschiedenheit</em> ist aber vermutlich meist selbst bei den besten und bemühtesten Lehrern nicht gegeben: Oft ist es der Leistungsunterschied zwischen einer 1 und einer 2 eben doch nicht genauso groß wie der Unterschied zwischen einer 2 und einer 3. Deshalb kann man sagen, dass Schulnoten <em>Ordninalskalenniveau</em> aufweisen. (Wir werden später sehen, warum es dann auch eigentlich nicht geschickt ist, eine “Durchschnittsnote” zu berechnen.)</p>
-<p>Postleitzahlen weisen <em>Nominalskalenniveau</em> auf: Nur die Relation von <em>Gleichheit/Verschiedenheit</em> ist erhalten: Unterschiedliche Zahlen bedeuten unterschiedliche Postleitzahlenbereiche (z.B. Stadtteile), gleiche Postleitzahlen bedeuten, dass es auch der gleiche Postleitzahlenbereicht ist. Die Relation der <em>Ordnung</em> ist schon nicht mehr wirklich gegeben: Zwar kann man eine grobe Ordnung nach Regionen feststellen, diese ist aber sehr unsystematisch.</p>
+<div id="hypothesen-und-hypothesentest" class="section level1">
+<h1><span class="header-section-number">Kapitel 4</span> Hypothesen und Hypothesentest</h1>
+<p>Wissenschaftliche Untersuchungen werden durchgefürt, um eine bestimmte Forschungsfrage zu beantworten. Diese Forschungsfrage wird als sog. <em>inhaltliche Hypothese</em> formuliert. Hypothesen sind Erwartungen über Unterschiede zwischen oder Zusammenhänge von Variablen, die vor einer Untersuchung formuliert werden.</p>
+<p>Beispiele für inhaltliche Hypothesen sind:</p>
+<ul>
+<li>Raucher sterben früher.</li>
+<li>Erhöhte Cholesterinspiegel lösen Herzkrankheiten aus.</li>
+</ul>
+<p>Davon unterscheidet man statistische Hypothesen. Sie beziehen sich auf statistische Kennwerte und ihre Verteilungen.</p>
+<p>Beispiel:</p>
+<ul>
+<li>Der Mittelwert des Alters beim Eintreten des Todes ist bei Rauchern geringer als bei Nichtrauchern.</li>
+</ul>
+<p>Es werden immer zwei komplementäre statistische Hypothesen formuliert: die Nullhypothese und die Alternativhypothese. Die Nullhypothese <span class="math inline">\(H_0\)</span> besagt in der Regel, dass es keinen Unterschied zwischen zwei Populationen in der Ausprägung eines Merkmals (bzw. keinen Zusammenhang zwischen zwei Merkmalen in einer Population) gibt. Die Alternativhypothese <span class="math inline">\(H_1\)</span> besagt, dass es einen Unterschied (bzw. einen Zusammenhang) gibt. <span class="math inline">\(H_0\)</span> und <span class="math inline">\(H_1\)</span> sind komplementär: Das bedeutet entweder die eine oder die andere Hypothese trifft zu, es gibt keine dritte Möglichkeit.</p>
+<p>Das Ziel des Signifikanz- bzw. Hypothesentests ist es nun häufig, zwischen diesen beiden Hypothesen <em>entscheiden</em> zu können. Hierzu wird üblicherweise der Stichprobenkennwert (z.B. der Stichprobenmittelwert) mit der Stichprobenkennwerteverteilung verglichen, die die <em>Nullhypothese</em> vorhersagen würde. Ist der Stichprobenmittelwert unter Annahme der Nullhypothese wenig wahrscheinlich, <em>verwirft</em> man die Nullhypothese und entscheidet sich für die Alternativhypothese (sie ist ja die einzige Alternative zur als “falsch” befundenen Nullhypothese). Ist der Stichprobenmittelwert aber unter Annahme der Nullhypothese recht wahrscheinlich, bleibt man bei der Nullhypothese (denn sie hat ja den Stichprobenmittelwert gut vorhersagen können) – wie gut oder schlecht aber die Alternativhypothese den Mittelwert hätte vorhersagen können, können wir nicht sagen.</p>
+<p>Für eine echte Entscheidung <em>zwischen</em> diesen beiden Hypothesen reicht dieses Vorgehen eigentlich nicht aus: Man hat ja noch nicht überprüft, wie wahrscheinlich oder unwahrscheinlich der Stichprobenmittelwert unter Annahme der Alternativhypothese gewesen wäre. Eigentlich können wir nur sagen, wie wahrscheinlich der Stichprobenkennwert unter Annahme der Nullhypothese war.</p>
+<div id="entscheidungsfehler" class="section level2">
+<h2><span class="header-section-number">4.1</span> Entscheidungsfehler</h2>
+<p>Entscheidet man also zwischen zwei Hypothesen, besteht auch immer eine gewisse Wahrscheinlichkeit, dass man einen Entscheidungsfehler begeht und sich für die falsche der beiden Hypothesen entscheidet. Das Verwerfen der Nullhypothese, obwohl sie stimmt, nennt man <span class="math inline">\(\alpha\)</span>-Fehler (oder Fehler 1. Art), das Beibehalten der Nullhypothese, obwohl sie nicht stimmt, nennt man <span class="math inline">\(\beta\)</span>-Fehler (oder Fehler 2. Art).</p>
+<p>Wann genau entscheidet man sich aber nun für oder gegen die Nullhypothese? Es hat sich eingebürgert, sich gegen die Nullhypothese zu entscheiden, wenn die Wahrscheinlichkeit des Stichprobenkennwerts unter Annahme der Nullhypothese kleiner oder gleich 5% ist. (Diesen Wert nennt man auch “<span class="math inline">\(\alpha\)</span>-Fehlerniveau von 5%”.) Das bedeutet aber auch, dass der Stichprobenkennwert unter Annahme der Nullhypothese nicht unmöglich war, sondern eben “nur” eine 5%-ige Wahrscheinlichkeit hatte. Es ist an dieser Stelle wichtig festzustellen, dass wir anhand einer einzelnen Stichprobe und eines Kennwerts nichts über die Wahrscheinlichkeit wissen, ob wir gerade einen <span class="math inline">\(\alpha\)</span>-Fehler begehen oder nicht: Es kann ja gut sein, dass die Nullhypothese “wahr” ist und wir nur zufällig eine jener 5% von Stichproben aus der Population gezogen haben, die eben unter der Nullhypothese etwas weniger wahrscheinlich waren.</p>
+<p>Was ist dann aber der Vorteil davon, überhaupt einen Signifikanztest zu rechnen? Der Vorteil liegt darin, dass wir, wenn wir viele Untersuchungen durchführen, uns “nur” in 5% der Fälle fälschlicherweise gegen die Nullhypothese entscheiden. Wenn wir die gleiche Untersuchung mehrfach durchführen – oder jemand anderes unsere Untersuchung wiederholt – fällt es auf, wenn wir uns einmal falsch entschieden haben und der Fehler kann korrigiert werden.</p>
 </div>
-<div id="kapitel-2-beschreiben-und-zusammenfassen" class="section level2 unnumbered">
-<h2>Kapitel 2: Beschreiben und Zusammenfassen</h2>
+<div id="aufgaben-3" class="section level2 unnumbered">
+<h2>Aufgaben</h2>
+<p><a href="http://134.95.17.54:3838/significance">Öffne App in neuem Fenster</a></p>
+<iframe src="http://134.95.17.54:3838/significance/?showcase=0" width="672" height="600px">
+</iframe>
+<p>Verwendet die App, um die folgenden Fragen zu beantworten:</p>
 <ol style="list-style-type: decimal">
-<li>Zeichnet ein Histogramm der Variable <em>Alter</em> in der folgenden Tabelle.</li>
+<li>Wenn Ihr 20 Stichproben zieht und anhand deren Mittelwert zwischen <span class="math inline">\(H_0\)</span> und <span class="math inline">\(H_1\)</span> entscheiden müsst, wie häufig begeht Ihr einen <span class="math inline">\(\alpha\)</span>-Fehler?</li>
+<li>Nehmt nun an, dass der wahre Mittelwert nicht 170 cm, sondern 180 cm beträgt. Wie häufig begeht Ihr einen <span class="math inline">\(\beta\)</span>-Fehler?</li>
+<li>Nehmt nun an, dass der wahre Mittelwert nicht 170 cm, sondern 190 cm beträgt. Wie häufig begeht Ihr einen <span class="math inline">\(\beta\)</span>-Fehler?</li>
+<li>Mit welchen Größen lässt sich das Verhältnis von <span class="math inline">\(\alpha\)</span>- und <span class="math inline">\(\beta\)</span>-Fehler beeinflussen?</li>
 </ol>
-<p><img src="Forschungsmethoden_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
-<ol start="2" style="list-style-type: decimal">
-<li>Zeichnet ein Histogramm der Variable <em>Alter</em> aus der vorigen Aufgabe. Zeichnet dieses Mal jedoch eine sekundäre Häufigkeitsverteilung, beginnend mit der Kategorie “18-21 Jahre”.</li>
-</ol>
-<p><img src="Forschungsmethoden_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
-<ol start="3" style="list-style-type: decimal">
-<li>Berechnet den Modus der Variable <em>Geschlecht</em> aus Aufgabe 1.</li>
-</ol>
-<p><span class="math inline">\(\textit{Mo}=\)</span> “weiblich”</p>
-<ol start="4" style="list-style-type: decimal">
-<li>Berechnet den Mittelwert der Variable <em>Alter</em> aus Aufgabe 1.</li>
-</ol>
-<p><span class="math inline">\(M =24.85\)</span></p>
-<ol start="5" style="list-style-type: decimal">
-<li>Erläutert, warum es nicht sinnvoll ist, den Median der Variable <em>Geschlecht</em> zu berechnen.</li>
-</ol>
-<p>Es ist nicht sinnvoll, den Median von Geschlecht zu berechnen, da sich die Merkmalsausprägungen (weiblich vs. männlich) in keine sinnvolle Ordnung bringen lassen. Entsprechend weist die Variable Geschlecht nur Nominalskalenniveau auf.</p>
-<!-- # Literatur -->
+
 </div>
 </div>
             </section>
@@ -157,8 +153,8 @@
           </div>
         </div>
       </div>
-<a href="hypothesen-und-hypothesentest.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="literatur.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="wahrscheinlichkeitstheorie-und-inferenzstatistische-grundlagen.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="losungen.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -187,7 +183,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/9-abspann.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/3-wahrscheinlichkeit.Rmd",
 "text": "Bearbeiten"
 },
 "download": ["Forschungsmethoden.pdf"],
